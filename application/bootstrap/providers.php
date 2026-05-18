@@ -1,7 +1,5 @@
 <?php
 
-use App\Providers\AppServiceProvider;
-
 return [
-    
+    App\Comix\Auth\Providers\AuthServiceProvider::class,
 ];

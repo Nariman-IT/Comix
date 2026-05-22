@@ -32,6 +32,18 @@ return [
 
     'connections' => [
 
+        'pgsql_testing' => [
+            'driver' => 'pgsql',
+            'host' => env('DB_TESTING_HOST', 'database_testing'),
+            'port' => env('DB_TESTING_PORT', '5432'),
+            'database' => env('DB_TESTING_DATABASE', 'comics_testing'),
+            'username' => env('DB_TESTING_USERNAME', 'user'),
+            'password' => env('DB_TESTING_PASSWORD', 'password'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'schema' => 'public',
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DB_URL'),

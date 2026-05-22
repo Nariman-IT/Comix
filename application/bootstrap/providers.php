@@ -1,5 +1,5 @@
 <?php
 
 return [
-    App\Comix\Auth\Providers\AuthServiceProvider::class,
+    App\Comics\Auth\Providers\AuthServiceProvider::class,
 ];

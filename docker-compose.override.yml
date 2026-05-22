@@ -28,3 +28,15 @@ services:
   redis:
     ports:
       - "${REDIS_PORT}:6379"
+
+  database_testing:
+    image: postgres:15-alpine
+    container_name: ${PROJECT_NAME}_database_testing
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: comics_testing
+    ports:
+      - "5433:5432"
+    networks:
+      - app-network
